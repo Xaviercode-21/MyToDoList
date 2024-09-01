@@ -1,0 +1,190 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    background: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #667eea;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-item {
+    margin-left: 20px;
+    position: relative;
+}
+
+.navbar .nav-item input {
+    padding: 8px 10px;
+    border: 2px solid #667eea;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.navbar .nav-item button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    border: none;
+    background: #667eea;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.navbar .nav-item button:hover {
+    background: #764ba2;
+}
+
+.navbar .nav-item.notification {
+    cursor: pointer;
+}
+
+.navbar .nav-item.notification .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: #ff5e5e;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 7px;
+    font-size: 0.8rem;
+}
+
+.navbar .nav-item.user-account {
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar .nav-item.user-account .dropdown {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.navbar .nav-item.user-account .dropdown.show {
+    display: block;
+}
+
+.navbar .nav-item.user-account .dropdown ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.navbar .nav-item.user-account .dropdown ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.navbar .nav-item.user-account .dropdown ul li:hover {
+    background: #f0f0f0;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* To-Do App Styling */
+.todo-app {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* To-Do List Styling */
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual Task Styling */
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Name Styling */
+.todo-list li .name {
+    flex-grow: 1;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Button Styling */
+button {
+    padding: 5px 12px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Specific Styles for Delete and Edit Buttons */
+button.delete {
+    background: #ff5e5e;
+    color: white;
+}
+
+button.edit {
+    background: #4caf50;
+    color: white;
+}
+
+/* Hover Effects */
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+button:active {
+    transform: translateY(0);
+    opacity: 1;
+}
